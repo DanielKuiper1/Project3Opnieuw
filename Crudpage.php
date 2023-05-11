@@ -7,18 +7,24 @@
     <title>Document</title>
     <link rel="stylesheet" href="Project3.css" />
   </head>
-  <body class="Homepage">
+  <body class="Crudpage">
     <header>
       <ul class="navigation-list">
-        <li class="navigation-item"><a href="Homepage.php">Home</a></li>
+      <li class="navigation-item"><a href="Homepage.php">Home</a></li>
         <li class="navigation-item"><a href="Webshoppage.php">Products</a></li>
         <li class="navigation-item"><a href="Crudpage.php">CRUD</a></li>
       </ul>
     </header>
     <main>
+      <h1>CRUD</h1>
+
       <section class="card-container-C card-container">
-        <article class="card-Home">
-          </article>
+        <article class="card-crud">
+            <?php
+            include 'Function.php';
+            Crudsokken();
+            ?>
+        </article>
       </section>
     </main>
     <footer>

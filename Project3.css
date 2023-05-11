@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+
+.Homepage {
+  font-family: sans-serif;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 30% auto;
+  grid-template-rows: 60px auto 60px;
+  grid-template-areas: 
+  
+  "hd hd"
+  "main main"
+  "footer footer";
+}
+
+.Crudpage {
+    font-family: sans-serif;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-template-rows: 60px auto 60px;
+    grid-template-areas: 
+    
+    "hd hd"
+    "main main"
+    "footer footer";
+  }
+
+.Webshoppage {
+    font-family: sans-serif;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-template-rows: 60px auto 60px;
+    grid-template-areas: 
+    
+    "hd hd"
+    "sidebar main"
+    "footer footer";
+  }  
+
+header,
+aside,
+main,
+footer {
+  padding: 16px;
+  text-align: center;
+}
+
+main{
+    grid-area: main;
+    min-height: calc(100vh - 120px);
+}
+
+header {
+  background: #2d2d2d;
+  grid-area: hd;
+}
+
+aside {
+  background: #3a3a3a;
+  color: white;
+  grid-area: sidebar;
+}
+
+footer {
+  background: black;
+  grid-area: footer;
+}
+
+.navigation-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.navigation-item{
+    margin: 0 10px;
+}
+.navigation-item a {
+  text-decoration: none;
+  color: white;
+}
+
+.navigation-item a:hover,
+.navigation-item a:active {
+  color: #787878;
+}
+.card-Home{
+    width: 80vw;
+    background-color: #b1b0b081;
+    height: 60vh;
+    padding: 20px;
+    border-radius: 5px;
+    color: rgb(149, 149, 149);
+}
+.card-crud{
+    width: auto;
+    background-color: #b1b0b081;
+    height: auto;
+    padding: 20px;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+}
+.card{
+    width: 20vw;
+    background-color: #172852;
+    height: 20vh;
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+}
+.card-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+.card-container-C{
+    justify-content: center;
+    padding: 20px;
+}
