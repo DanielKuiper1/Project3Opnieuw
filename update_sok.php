@@ -18,8 +18,34 @@
     }
    ?>
 
-<html>
-    <body>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Project3.css" />
+  </head>
+  <body class="Crudpage">
+    <header>
+      <ul class="navigation-list">
+      <li class="navigation-item"><a href="Homepage.php">Home</a></li>
+        <li class="navigation-item"><a href="Webshoppage.php">Products</a></li>
+        <li class="navigation-item"><a href="Crudpage.php">CRUD</a></li>
+      </ul>
+    </header>
+    <main>
+      <h1>Wijzig <?php echo $row['Naam'];?></h1>
+
+      <section class="card-container-C card-container">
+        <article class="card-crud">
+
+
         <form method="post">
         <br>
         ID:<input readonly type="" name="ID" value="<?php echo $row['ID'];?>"><br>
@@ -28,5 +54,16 @@
         Prijs: <input  type="text" name="Prijs" value="<?= $row['Prijs']?>"><br>
         <input type="submit" name="btn_wzg" value="Wijzigen"><br>
         </form>
-    </body>
+
+
+        </article>
+      </section>
+    </main>
+    <footer>
+      <ul class="navigation-list">
+        <li class="navigation-item"><a href="#">Terms of Use</a></li>
+        <li class="navigation-item"><a href="#">Support</a></li>
+      </ul>
+    </footer>
+  </body>
 </html>
