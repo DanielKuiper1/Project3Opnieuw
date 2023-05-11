@@ -113,7 +113,7 @@ function Crudsokken()
 function PrintCrudsok($result)
 {
     // Zet de hele table in een variable en print hem 1 keer 
-    $table = "<table border = 1px>";
+    $table = "<table class='BlackTable'>";
 
     // Print header table
 
@@ -121,7 +121,7 @@ function PrintCrudsok($result)
     $headers = array_keys($result[0]);
     $table .= "<tr>";
     foreach ($headers as $header) {
-        $table .= "<th bgcolor=white>" . $header . "</th>";
+        $table .= "<th>" . $header . "</th>";
     }
 
     // print elke rij
@@ -134,17 +134,21 @@ function PrintCrudsok($result)
         $table .= "<td>" . $row['Naam'] . "</td>";
         $table .= "<td>" . $row['Prijs'] . "</td>";
         $table .= "<td>" . $row['Merk'] . "</td>";
+        $table .= "<td>" . "-" . "</td>";
         // }
         // $table .= "</tr>";
 
         // Wijzig knopje
         $table .= "<td>" .
             "<form method='post' action='update_sok.php?ID=$row[ID]' >       
-                    <button name='wzg'>Wzg</button>	 
+                    <button class='myButton' name='wzg'>Wijzig</button>	 
             </form>" . "</td>";
 
         // Delete via linkje href
-        $table .= '<td><a href="delete_sok.php?ID=' . $row["ID"] . '">verwijder</a></td>';
+        $table .= "<td>" .
+        "<form method='post' action='delete_sok.php?ID=$row[ID]' >       
+                <button class='myButton' name='Delete'>Delete</button>	 
+        </form>" . "</td>";
 
         $table .= "</tr>";
     }
@@ -177,7 +181,7 @@ function PrintLijstsok($result)
             . '</br>'
             . $article["Merk"]
             . '</br>'
-            . $article["Prijs"]
+            . $article["Prijs"] . '.00 $'
             . "<form method='post' action='Product.php?ID=$article[ID]' >       
     <button name='Bekijk'>Bekijk Product</button>	 
     </form>"
