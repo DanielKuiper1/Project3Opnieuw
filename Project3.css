@@ -114,11 +114,11 @@ footer {
 
 .card {
   width: 20vw;
-  background-color: #172852;
-  height: 20vh;
+  background-color: #EEEEEE;
+  height: 50vh;
   padding: 20px;
   border-radius: 5px;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .card-container {

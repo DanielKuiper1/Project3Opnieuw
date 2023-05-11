@@ -18,7 +18,17 @@
     </ul>
   </header>
   <aside>
-    <p>sidebar</p>
+  <form method="get" action="">
+    <select name="sort">
+        <option value="Naam">Sort by Name</option>
+        <option value="Prijs">Sort by Price</option>
+    </select>
+    <select name="direction">
+        <option value="ASC">Ascending</option>
+        <option value="DESC">Descending</option>
+    </select>
+    <input type="submit" value="Sort">
+</form>
   </aside>
   <main>
     <h1>Producten</h1>
