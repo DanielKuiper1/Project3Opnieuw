@@ -40,8 +40,8 @@ if (isset($_GET['ID'])) {
     <section class="card-container-C card-container">
       <article class="card-crud">
         <form method="post">
-          ID:<input type="" name="biercode" value="<?php echo $row['ID']; ?>" readonly><br>
-          Naam:<input type="" name="naam" value="<?php echo $row['Naam']; ?>" readonly><br>
+          ID:<input type="" name="ID" value="<?php echo $row['ID']; ?>" readonly><br>
+          Naam:<input type="" name="Naam" value="<?php echo $row['Naam']; ?>" readonly><br>
           Prijs: <input type="text" name="Prijs" value="<?= $row['Prijs'] ?>" readonly><br>
           Merk: <input type="text" name="Merk" value="<?= $row['Merk'] ?>" readonly><br>
           <input type="submit" name="btn_wzg" value="Delete"><br>

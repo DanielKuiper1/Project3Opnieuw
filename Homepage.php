@@ -20,7 +20,25 @@
   <main>
     <section class="card-container-C card-container">
       <article class="card-Home">
-        <h2>Sokker</h2>
+        <section id="intro">
+        <h1>Welkom bij Sokken Info</h1>
+        <p>Alles wat u wilt weten over sokken vindt u hier! Van materiaalkeuzes tot de verschillende soorten sokken, we hebben het allemaal.</p>
+    </section>
+    <section class="sock-type">
+        <h2>Wollen Sokken</h2>
+        <p>Wollen sokken zijn perfect voor de koude wintermaanden. Leer hier meer over de voordelen van wollen sokken.</p>
+        <img src="./img/P3WollenSokken.jpg" alt="Wollen Sokken">
+    </section>
+    <section class="sock-type">
+        <h2>Katoenen Sokken</h2>
+        <p>Katoenen sokken zijn licht, ademend en geweldig voor dagelijks gebruik. Ontdek hier meer over katoenen sokken.</p>
+        <img src="./img/P3Katoenensokken.jpg" alt="Katoenen Sokken">
+    </section>
+    <section class="sock-type">
+        <h2>Sport Sokken</h2>
+        <p>Sport sokken zijn ontworpen voor prestaties en comfort tijdens het sporten. Leer hier meer over sport sokken.</p>
+        <img src="./img/P3SportSokken.jpg" alt="Sport Sokken">
+    </section>
       </article>
     </section>
   </main>

@@ -266,7 +266,7 @@ function Deletesok($row)
     FROM sok
     WHERE sok.ID = :ID";
     $query = $conn->prepare($sql);
-    // $query->bindParam(':ID', $row['ID'], PDO::PARAM_INT);
+    $query->bindParam(':ID', $row['ID'], PDO::PARAM_INT);
     try {
         $query->execute();
     } catch (PDOException $e) {

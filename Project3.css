@@ -97,10 +97,10 @@ footer {
 .card-Home {
   width: 80vw;
   background-color: #b1b0b081;
-  height: 60vh;
+  height: 130vh;
   padding: 20px;
   border-radius: 5px;
-  color: rgb(149, 149, 149);
+  color: rgb(0, 0, 0);
 }
 
 .card-crud {
@@ -237,4 +237,28 @@ table.BlackTable td, table.BlackTable th {
 .myButton4:active {
 	position:relative;
 	top:1px;
+}
+#intro {
+  margin-bottom: 20px;
+}
+
+.sock-type {
+  background-color: #f9f9f9;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.sock-type h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.sock-type p {
+  margin-bottom: 10px;
+}
+
+.sock-type img {
+  width: 100px;
+  height: auto;
 }
