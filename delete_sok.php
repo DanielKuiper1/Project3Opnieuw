@@ -9,7 +9,6 @@ if (isset($_POST) && isset($_POST['btn_wzg'])) {
 }
 
 if (isset($_GET['ID'])) {
-  echo "Data uit het vorige formulier:<br>";
   // Haal alle info van de betreffende biercode $_GET['biercode']
   $ID = $_GET['ID'];
   $row = Getsok($ID);

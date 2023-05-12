@@ -1,5 +1,4 @@
 <?php
-    echo "<h1>Update Sok</h1>";
     require_once('Function.php');
 
     // Test of er op de wijzig-knop is gedrukt 
@@ -11,7 +10,6 @@
 
 
     if(isset($_GET['ID'])){  
-        echo "Data uit het vorige formulier:<br>";
         // Haal alle info van de betreffende biercode $_GET['biercode']
         $ID = $_GET['ID'];
         $row = Getsok($ID);

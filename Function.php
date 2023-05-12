@@ -123,7 +123,7 @@ function PrintCrudsok($result)
     $table .= "<tr>";
     echo "<form method='post' action='create_sok.php' >       
         <button class='myButton' name='create'>Create</button>	 
-         </form>";
+         </form><br>";
     foreach ($headers as $header) {
         $table .= "<th>" . $header . "</th>";
     }
@@ -210,8 +210,6 @@ function PrintLijstsok($result)
 
 function Createsok($result)
 {
-    echo "Create row<br>";
-
     $conn = ConnectDb();
 
     $imageData = file_get_contents($_FILES['IMG']['tmp_name']);
@@ -229,8 +227,6 @@ function Createsok($result)
 }
 function Updatesok($row)
 {
-    echo "Update row<br>";
-
     $conn = ConnectDb();
 
     $sql = "UPDATE sok 
@@ -260,10 +256,9 @@ function Updatesok($row)
 //     $query = $conn->prepare($sql);
 //     $query->execute();
 // }
+
 function Deletesok($row)
 {
-    echo "delete row<br>";
-
     $conn = ConnectDb();
 
     $sql = "DELETE 
