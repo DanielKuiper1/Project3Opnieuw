@@ -13,7 +13,6 @@ function ConnectDb()
         // set the PDO error mode to exception
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $conn->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
-        echo "Connected successfully";
         return $conn;
     } catch (PDOException $e) {
         echo "Connection failed: " . $e->getMessage();
@@ -122,7 +121,7 @@ function PrintCrudsok($result)
     $headers = array_keys($result[0]);
     $table .= "<tr>";
     echo "<form method='post' action='create_sok.php' >       
-        <button class='myButton' name='create'>Create</button>	 
+        <button class='myButton3' name='create'>Create</button>	 
          </form><br>";
     foreach ($headers as $header) {
         $table .= "<th>" . $header . "</th>";
@@ -151,7 +150,7 @@ function PrintCrudsok($result)
         // Delete via linkje href
         $table .= "<td>" .
         "<form method='post' action='delete_sok.php?ID=$row[ID]' >       
-                <button class='myButton' name='Delete'>Delete</button>	 
+                <button class='myButton2' name='Delete'>Delete</button>	 
         </form>" . "</td>";
 
         $table .= "</tr>";
@@ -190,13 +189,15 @@ function PrintLijstsok($result)
         echo '<article class="card">'
             . '<img src="'.$src.'" alt="Image" width="200" height="200">'
             . '</br>'
+            . '</br>'
             . $article["Naam"]
             . '</br>'
             . $article["Merk"]
             . '</br>'
             . $article["Prijs"] . '.00 $'
+            . '</br>'
             . "<form method='post' action='Product.php?ID=$article[ID]' >       
-    <button name='Bekijk'>Bekijk Product</button>     
+    <button class='myButton4' name='Bekijk'>Bekijk Product</button>     
     </form>"
             . '</article>';
         if ($x > 2) {

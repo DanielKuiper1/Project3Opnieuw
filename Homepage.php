@@ -20,6 +20,7 @@
   <main>
     <section class="card-container-C card-container">
       <article class="card-Home">
+        <h2>Sokker</h2>
       </article>
     </section>
   </main>
